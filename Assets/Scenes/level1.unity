@@ -1587,6 +1587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8bac5ef5023fc14f8aaaef70c58a05a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  invokeAmount: 0.5
 --- !u!1 &1630126367
 GameObject:
   m_ObjectHideFlags: 0
@@ -1681,7 +1682,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1712170457}
   - component: {fileID: 1712170456}
-  - component: {fileID: 1712170455}
+  - component: {fileID: 1712170458}
   m_Layer: 0
   m_Name: Finish Line
   m_TagString: Untagged
@@ -1689,18 +1690,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1712170455
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1712170454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33d44bf0bccd39240bfbad2d247dd3ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1712170456
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1711,7 +1700,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 12.1}
@@ -1735,7 +1724,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1712170454}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7, y: 5, z: 0.83465886}
+  m_LocalPosition: {x: 27.4, y: -6.1, z: 0.83465886}
   m_LocalScale: {x: 1, y: 1.1125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1743,6 +1732,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1712170458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712170454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51f6c911c3717c74b91a6d76a9c104e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invokeAmount: 1
 --- !u!1 &1800916219
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,11 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class FinishedLine : MonoBehaviour
 {
+    [SerializeField] float LoadDelay = 2f;
     void OnTriggerEnter2D(Collider2D other) 
     {
         if (other.tag == "Player")
         {
-            Invoke("ReloadScene",2f);
+            Invoke("ReloadScene",LoadDelay);
             Debug.Log("Finish");
         }
     }
